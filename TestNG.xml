@@ -1,0 +1,17 @@
+<suite name = "Smoke">
+    <listeners>
+        <listener class-name = "utility.ExtentReportUtility"/>
+    </listeners>
+    <test name = "smokeTest">
+        <parameter name = "os" value = "Windows"/>
+        <parameter name = "browser" value = "Chrome"/>
+        <groups>
+            <run>
+                <include name = "newFeature"/>
+            </run>
+        </groups>
+        <classes>
+            <class name = "TestMethods.TestForgetPassword" />
+        </classes>
+    </test>
+</suite>
