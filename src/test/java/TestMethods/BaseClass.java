@@ -1,8 +1,6 @@
 package TestMethods;
 
 import Driver.DriverManager;
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -19,7 +17,7 @@ import java.util.Properties;
 public class BaseClass {
     public static WebDriver driver;
     Properties properties;
-    public Logger logger;
+    //public Logger logger;
 
     @BeforeSuite(groups = {"newFeature", "positiveTest", "regression"},alwaysRun = true)
     public void setUp() throws IOException
@@ -29,7 +27,7 @@ public class BaseClass {
         FileInputStream file = new FileInputStream(filepath);
         properties = new Properties();
         properties.load(file);
-        logger = LogManager.getLogger(this.getClass());
+        //logger = LogManager.getLogger(this.getClass());
 
        /** if (driver == null) {
             //System.setProperty("Webdriver.chrome.driver", "C:\\Users\\HP\\OneDrive\\Documents\\Selenium-Automation\\IdeaProjects\\WebDrivers\\chromedriver-win64\\chromedriver-win64");
