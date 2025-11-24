@@ -41,4 +41,7 @@ build/
 .idea
 
 ###Reports###
-.Reports
+.Reports/
+
+###Logs###
+.Logs/
