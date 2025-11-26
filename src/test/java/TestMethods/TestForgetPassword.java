@@ -17,7 +17,7 @@ public class TestForgetPassword extends BaseClass {
       Logger logger;
       public TestForgetPassword ()
       {
-         driver= DriverManager.getDriver();
+         driver = DriverManager.getDriver();
          forgetPassword = new ForgetPassword(driver);
          loginPage = new LoginPage(driver);
           logger = LogManager.getLogger(this.getClass());
